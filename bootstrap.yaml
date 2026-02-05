@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: 00-argocd-demo-bootstrap
+  namespace: infra-argocd
+  labels:
+    app: argocd-demo
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/stan1ey-shen/argocd-demo.git
+    targetRevision: HEAD
+    path: appsets
+
+  destination:
+    name: in-cluster
+    namespace: infra-argocd
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      prune: false
+      selfHeal: false

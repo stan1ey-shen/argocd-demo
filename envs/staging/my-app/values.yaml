@@ -1,0 +1,6 @@
+ingress:
+  hosts:
+    - host: argocd-demo
+      paths:
+        - path: /my-app-1
+          pathType: ImplementationSpecific
