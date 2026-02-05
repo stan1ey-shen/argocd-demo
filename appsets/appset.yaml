@@ -21,7 +21,7 @@ spec:
         app: "argocd-demo-{{index .path.segments 1}}"
     spec:
       # The project the application belongs to.
-      project: "defult"
+      project: "default"
       # Source of the application manifests
       source:
         repoURL: https://github.com/stan1ey-shen/argocd-demo.git
