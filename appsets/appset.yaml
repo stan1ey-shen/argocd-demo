@@ -19,7 +19,7 @@ spec:
       name: "{{index .path.segments 1}}-{{index .path.segments 2}}"
       labels:
         app: "argocd-demo-{{index .path.segments 1}}"
-        env: "{{index .path.segments 2}}"
+        env: "{{index .path.segments 1}}"
     spec:
       # The project the application belongs to.
       project: "default"
