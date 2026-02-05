@@ -4,7 +4,7 @@ version: 0.1.0
 description: A Helm chart for Kubernetes
 
 dependencies:
-  - name: myApp
+  - name: my-app
     version: 0.1.0
     repository: "@proxy-gorilla-ai-mjib-ipdr-infra-creds"
     alias: myApp
