@@ -1,4 +1,5 @@
 myApp:
+  fullnameOverride: "my-app"
   ingress:
     hosts:
       - host: argocd-demo
