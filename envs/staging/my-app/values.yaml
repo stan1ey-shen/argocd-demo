@@ -5,4 +5,4 @@ myApp:
       - host: argocd-demo
         paths:
           - path: /my-app-1
-            pathType: ImplementationSpecific
+            pathType: Prefix
