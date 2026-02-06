@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app2
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: my-app
+    repoURL: "@proxy-gorilla-ai-mjib-ipdr-infra-creds"
+    targetRevision: 0.1.*
+    helm:
+      values: |
+        fullnameOverride: "my-app"
+        replicaCount: 1
+        ingress:
+          hosts:
+            - host: my-app2-staging
+              paths:
+                - path: /
+                  pathType: ImplementationSpecific
+  destination:
+    server: in-cluster
+    namespace: my-demo-staging-my-app2
