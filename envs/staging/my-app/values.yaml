@@ -1,9 +1,0 @@
-myApp:
-  fullnameOverride: "my-app"
-  replicaCount: 1
-  ingress:
-    hosts:
-      - host: my-app-staging
-        paths:
-          - path: /
-            pathType: ImplementationSpecific

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app2
+  name: my-app
   namespace: infra-argocd
 spec:
   project: default
@@ -15,10 +15,10 @@ spec:
         replicaCount: 1
         ingress:
           hosts:
-            - host: my-app2-staging
+            - host: my-app-staging
               paths:
                 - path: /
                   pathType: ImplementationSpecific
   destination:
     name: in-cluster
-    namespace: my-demo-staging-my-app2
+    namespace: my-demo-staging-my-app
