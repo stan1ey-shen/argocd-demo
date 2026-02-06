@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     chart: my-app
-    repoURL: "@proxy-gorilla-ai-mjib-ipdr-infra-creds"
+    repoURL: "https://192.168.4.154:8082/repository/helm-hosted-1"
     targetRevision: 0.1.*
     helm:
       values: |
