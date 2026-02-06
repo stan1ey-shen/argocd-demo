@@ -3,7 +3,7 @@ myApp:
   replicaCount: 5
   ingress:
     hosts:
-      - host: my-app-staging
+      - host: my-app2-staging
         paths:
           - path: /
             pathType: ImplementationSpecific
