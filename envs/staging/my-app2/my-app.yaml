@@ -20,5 +20,5 @@ spec:
                 - path: /
                   pathType: ImplementationSpecific
   destination:
-    server: in-cluster
+    name: in-cluster
     namespace: my-demo-staging-my-app2
