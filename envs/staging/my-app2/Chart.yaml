@@ -8,3 +8,6 @@ dependencies:
     version: 0.1.*
     repository: "@proxy-gorilla-ai-mjib-ipdr-infra-creds"
     alias: myApp
+  - name: argocd-hard-refresher
+    version: "0.1.1"
+    repository: "oci://ghcr.io/camposdelima"
