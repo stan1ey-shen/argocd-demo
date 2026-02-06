@@ -1,6 +1,6 @@
 myApp:
   fullnameOverride: "my-app"
-  replicaCount: 3
+  replicaCount: 5
   ingress:
     hosts:
       - host: my-app-production
